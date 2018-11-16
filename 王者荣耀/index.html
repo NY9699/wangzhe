@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>有你才有团！王者荣耀三周年庆-王者荣耀官网-腾讯游戏</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jq/jquery.min.js"></script>
+    <link rel="icon" href="img3/icon.jpg">
+</head>
+<body>
+<header id="header"></header>
+<div class="warp">
+    <ul class="ul">
+        <li class="li1 li">
+            <a href="#" class="logo"></a>
+            <video class="head-video" src="video.mp4" autoplay loop muted></video>
+        </li>
+        <li class="li2 li">
+            <div class="layout">
+            <div class="title">
+                <h2 class="title-h1 t1"></h2>
+                <h3 class="spr title-tit">10月28日 等你来</h3>
+            </div>
+                <div class="flbox">
+                    <div class="flbox-list">
+                        <div class="flbox-li nth1">
+                            <h4>周年限定<em></em>遇见飞天 </h4>
+                            <p class="flbox-txt">王者X敦煌研究院倾力合作，再现云彩霓裳。<br>参与王者周年庆活动，<br>就能获取“遇见飞天”周年限定皮肤。</p>
+                            <div class="flbox-time">活动时间：10.23-11.02</div>
+                        </div>
+                        <div class="flbox-li nth2">
+                            <h4>限定皮肤返场</h4>
+                            <p class="flbox-txt">限定皮肤返场，选出你自己喜欢的限定皮肤吧。<br> 票选时间：09.29-10.8</p>
+                            <div class="flbox-time"> 活动时间：10.26-10.28</div>
+                        </div>
+                        <div class="flbox-li nth3">
+                            <h4>全明星嘉年华</h4>
+                            <p class="flbox-txt">KPL顶级选手，知名主播参战。<br>明星齐聚，谁将登顶成功？ </p>
+                            <div class="flbox-time">活动时间：10月27日</div>
+                        </div>
+                        <div class="flbox-li nth4">
+                            <h4>周年豪礼</h4>
+                            <p class="flbox-txt">更多周年庆福利，<br>敬请期待。 </p>
+                            <div class="flbox-time">活动时间：10月28日</div>
+                        </div>
+                    </div>
+                    <a href="#" class="spr btn-detail">查看详情</a>
+                </div>
+            </div>
+        </li>
+        <li class="li3 li">
+            <div class="layout">
+                <div class="title">
+                    <h2 class="title-h1 t2"></h2>
+                    <h3 class="spr title-tit">10月28日 等你来</h3>
+                </div>
+                <div class="sbox">
+                    <div class="sbox-list">
+                        <div class="sbox-li">
+                            <a href="javascript:;" ><span>大牌神装为你成团</span></a>
+                            <div class="sbox-cont">
+                                <img src="imgindex/sue-pic1.jpg" alt="大牌神装，为你成团">
+                            </div>
+                        </div>
+                        <div class="sbox-li">
+                        <a href="javascript:;"><span>最硬神装</span></a>
+                        <div class="sbox-cont">
+                            <img src="imgindex/sue-pic2.jpg" alt="最硬神装">
+                        </div>
+                    </div>
+                    <div class="sbox-li curr">
+                    <a href="javascript:;"><span>最潮神装</span></a>
+                    <div class="sbox-cont">
+                        <img src="imgindex/sue-pic3.jpg" alt="最潮神装">
+                    </div>
+                </div>
+                <div class="sbox-li">
+                <a href="javascript:;"><span>最帅神装</span></a>
+                <div class="sbox-cont">
+                    <img src="imgindex/sue-pic4.jpg" alt="最帅神装">
+                </div>
+            </div>
+</div>
+</div>
+<p class="sue-tip">参加周年庆活动，就有机会获得属于你的“神装”！</p>
+<a href="#" class="spr btn-join">立即参加</a>
+</div>
+        </li>
+    </ul>
+    <a href="javascript:;" class="arr prev spr" title="上一">&lt;</a>
+    <a href="javascript:;" class="arr next spr" title="下一">&gt;</a>
+    <div class="nav" id="nav">
+        <ul class="nav-list">
+            <li class="liz">
+                <i class="ll">
+
+                </i><a href="javascript:">周年福利</a>
+                <i class="rr"></i>
+            </li>
+            <li class="liw">
+                <i class="ll"></i><a href="javascript:;" title="王者神装" >王者神装</a><i class="rr"></i>
+            </li>
+            <li>
+                <i class="ll"></i><a href="wjzz.html">舞姬之争</a><i class="rr">
+            </i>
+            </li>
+            <li><i class="ll"></i><a href="yysd.html" target="_blank" title="音乐盛典">音乐盛典</a><i class="rr"></i>
+            </li>
+            <li><i class="ll">
+            </i>
+                <a href="bbkd.html">版本看点</a><i class="rr"></i></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    $("#header").load("header.html");
+    $(".sbox-li").click(function(){
+        $(".sbox-li").removeClass("curr");
+        $(this).addClass("curr");
+    })
+   var screenW = $(document.body).width();
+    $(".li").css({"width":screenW})
+    $(".ul").css({"width":screenW*$(".li").size()});
+    console.log(screenW);
+    console.log(-screenW * ($(".li").size()-1));
+    $(".next").click(function(){
+        if($(".ul").position().left>=-screenW * ($(".li").size()-2)){
+            $(".ul").animate({"left":$(".ul").position().left-screenW});
+            if ($(".ul").position().left==0){
+                $(".nav-list li").removeClass("now");
+                $(".nav-list .liz").addClass("now");
+            }else if ($(".ul").position().left==-screenW){
+
+                $(".nav-list li").removeClass("now");
+                $(".nav-list .liw").addClass("now");
+            }
+        }else {
+            $(".ul").animate({"left":-screenW * ($(".li").size()-1)})
+        }
+    })
+    $(".prev").click(function(){
+        if ($(".ul").position().left>=0){
+            $(".ul").animate({"left":0})
+        }else {
+            $(".ul").animate({"left":$(".ul").position()
+                    .left+screenW});
+            console.log(1);
+            if ($(".ul").position().left==-screenW){
+                $(".nav-list li").removeClass("now");
+                console.log(2);
+            }else if ($(".ul").position().left==-screenW*2){
+                console.log(3);
+                $(".nav-list li").removeClass("now");
+                $(".nav-list .liz").addClass("now");
+            }
+        }
+    });
+    $(".liz").click(function(){
+        $(".ul").animate({"left":-screenW})
+    });
+    $(".liw").click(function(){
+        $(".ul").animate({"left":-screenW*2})
+    })
+
+</script>
+</html>

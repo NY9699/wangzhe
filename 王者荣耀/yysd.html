@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>王者荣耀音乐盛典—王者荣耀官方网站—腾讯游戏</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/yysd.css">
+    <link rel="icon" href="img3/icon.jpg">
+    <script src="jq/jquery.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=MK6kiXh7hL3d6TtQWw0GckYNmP1mXr1k"></script>
+
+</head>
+<body>
+<header id="header"></header>
+<div class="warp">
+    <div class="head">
+        <a href="index.html" class="logo"></a>
+        <a href="#" class="log-you"></a>
+        <div class="header-1">
+            <p class="title"></p>
+            <div class="btn-header">
+                <a href="#" class="btn-ljgp"></a>
+                <!--            <a href="javascript:TGDialogS('tc7'),video('container1','k0768b9inhn');" class="btn-sp" style="display: none;"></a>-->
+                <a href="#" class="btn-yyzb"></a>
+            </div>
+            <div class="topVideo" id="topVideo">
+                <video class="topVid" autoplay="autoplay" loop="loop" muted="">
+                    <source src="//game.gtimg.cn/images/yxzj/cp/a20180925wzconcert/top.webm" type="video/webm">
+                </video>
+            </div>
+        </div>
+        <div class="login-box">
+            <div id="unlogin_" class="login"><a href="javascript:;" title="QQ登录">
+            </a>
+            </div>
+        </div>
+    </div>
+    <div class="cont1">
+        <div class="main1" id="main1">
+            <p class="fgx"></p>
+            <div class="my-cont">
+                <div class="box-fyq">
+                    <div class="bullets">
+                        <span class="bullet bullet-active">
+                            <b></b>
+                            <strong>明星云集超一线歌手阵容</strong>
+                        </span>
+                        <span class="bullet">
+                            <b></b>
+                           <strong>国风与流行跨界碰撞</strong>
+                        </span>
+                        <span class="bullet">
+                            <b></b>
+                           <strong>峡谷第一舞姬battle战</strong>
+                        </span>
+                        <span class="bullet">
+                            <b></b>
+                            <strong>好莱坞作曲大师头号MVP</strong>
+                        </span>
+                        <span class="bullet">
+                            <b></b>
+                        <strong>国宝级音乐金牌辅助</strong>
+                        </span>
+                    </div>
+                </div>
+                <div class="box-swiper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img1/pc1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img1/pc2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img1/pc3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img1/pc4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img1/pc5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont2">
+        <div class="main2" id="main2">
+            <p class="fgx"></p>
+            <div class="my-cont">
+                <p class="red-team"></p>
+                <p class="blue-team"></p>
+            </div>
+        </div>
+    </div>
+    <div class="cont3">
+        <div class="main3" id="main3">
+            <p class="fgx"></p>
+            <div class="stadiums my-cont">
+                <p class="fgx-1"></p>
+                <ul class="information">
+                    <li class="information-1">
+                        <p class="wb"><em></em><b>开票时间：</b><span> 10月12日，12:00</span></p>
+                    </li>
+                    <li class="information-2">
+                        <p class="wb"><em></em><b>演出时间：</b><span> 10月28日，19:30</span></p>
+                    </li>
+                    <li class="information-3">
+                        <p class="wb"><em></em><b>场馆信息：</b><span> 五粮液成都金融城演艺中心</span></p>
+                    </li>
+                    <li class="information-4">
+                        <p class="wb"><em></em><b>场馆地址：</b><span> 成都市武侯区天府大道1777号</span></p>
+                    </li>
+                    <li class="information-5">
+                        <p class="wb">
+                            <em></em><b>交通方式： </b><span> 地铁—地铁1号至孵化园站<br>公交—74路、118路、501路、504路、898路至天府大道北段</span></p>
+                    </li>
+                    <li class="information-6">
+                        <p class="wb"><em></em><b>售票价格：</b><span></span></p>
+                    </li>
+                    <a href="javascript:;" class="btn-buy1"></a>
+                    <a href="javascript:;" class="btn-buy2"></a>
+                </ul>
+                <div id="container">
+                </div>
+                <div id="r-result">
+                    <input type="button" onclick="add_control();" value="添加" />
+                    <input type="button" onclick="delete_control();" value="删除" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont4">
+        <div class="main4" id="main4">
+            <p class="fgx"></p>
+            <div class="welfare my-cont">
+                <div class="welfare1">
+                    <p class="welfare-tit"></p>
+                    <p class="welfare-txt pc">
+                        <span>10月28日<br></span> 当晚观看音乐盛典直播<br> 享受全民生日<span>红包雨</span>
+                    </p>
+                    <div class="welfare-cont">
+                        <span class="welfare-pic"></span>
+                    </div>
+                    <a class="btn-more" href="javascript:;"></a>
+                </div>
+                <div class="welfare2">
+                    <p class="welfare-tit"></p>
+                    <p class="welfare-txt">
+                        10月28日<span>红蓝Battle</span><br>峡谷第一舞姬对决<br>PICK你的最爱<br><span>获赠周年庆限定个性动作</span>
+                    </p>
+                    <div class="welfare-cont">
+                        <a class="btn-lookm" href="javascript:;"></a>
+							<span class="welfare-pic">
+								<a class="btn-look1" href="javascript:;"></a>
+								<a class="btn-look2" href="javascript:;"></a>
+							</span>
+                    </div>
+                    <a class="btn-more" href="javascript:;"></a>
+                </div>
+                <div class="welfare3">
+                    <p class="welfare-tit"></p>
+                    <p class="welfare-txt"><span>王者荣耀三周年</span><br>为感谢各位莅临现场的召唤师们
+                        <br>将抽取<span>10名到场用户<br> 获赠全英雄全皮肤账号</span><br>（商城直售英雄及皮肤）</p>
+                    <div class="welfare-cont">
+                        <span class="welfare-pic"></span>
+                    </div>
+                    <a class="btn-more" href="javascript:;"></a>
+                </div>
+                <div class="welfare4">
+                    <p class="welfare-tit"></p>
+                    <p class="welfare-txt"><span>10月28日</span>音乐盛典现场<br><span> 三周年限定<br>蔡文姬特别涂装Q版手办</span><br>限量赠送</p>
+                    <div class="welfare-cont">
+                        <span class="welfare-pic"></span>
+                    </div>
+                    <a class="btn-more" href="javascript:;"></a>
+                </div>
+            </div>
+            <div id="kong"></div>
+            <div class="font-f">
+                <p>2015年10月，王者荣耀正式面向玩家，</p>
+                <p>一句“欢迎来到王者荣耀”从此成为最熟悉的陪伴。</p>
+                <div id="kong2">
+
+                </div>
+                <p>三年峡谷成长之路写满了你们的故事，
+                    <span class="span-m">充满了你们的身影，</span>
+                </p>
+                <p>是每一个坚守三路的你，</p>
+                <p>是每一个不抢buff的你，</p>
+                <p>是每一个闪现carry的你，</p>
+                <p>是每一个顺风不浪逆风不投的你，</p>
+                <p>是每一个酣战过后为队友和对手点赞的你……</p>
+                <p>星星少了任何一角都不完整，</p>
+                <p>团队缺了任何一人也无法荣耀。</p>
+                <div id="kong4">
+
+                </div>
+                <p>周年庆之际，王者荣耀献上终极音乐盛典，</p>
+                <p>让英雄的旋律响彻峡谷，让感恩的号角超越胜负，让你听见王者世界。</p>
+                <div id="kong3">
+
+                </div>
+                <div class="end-f"></div>
+            </div>
+        </div>
+    </div>
+    <div class="side-nav">
+        <ul class="navc" id="navc">
+            <li class="snav snav1">
+                <span></span>
+                <a href="#main1">精彩看点</a>
+            </li>
+            <li class="snav snav2">
+                <span></span>
+                <a href="#main2">明星嘉宾</a>
+            </li>
+            <li class="snav snav3">
+                <span></span>
+                <a href="#main3">场馆购票</a>
+            </li>
+            <li class="snav snav4">
+                <span></span>
+                <a href="#main4">四重福利</a>
+            </li>
+        </ul>
+        <p class="snav5">
+            <span></span>
+            <a href="https://pvp.qq.com/cp/a20181008znq/index.html">周年庆典</a>
+        </p>
+        <a class="top" href="#"></a>
+    </div>
+</div>
+<div id="footer_ied">
+    <div class="wrap_ied">
+        <p>
+            <a href="#">腾讯互动娱乐</a> |
+            <a href="#">服务条款</a> |
+            <a href="#">广告服务</a> |
+            <a href="#">腾讯游戏招聘</a> |
+            <a href="#">腾讯游戏客服</a> |
+            <a href="#">游戏地图</a> |
+            <a href="#">成长守护平台</a> |
+            <a href="#">商务合作</a> |
+            <a href="#">网站导航</a>
+        </p>
+        <p class="e">COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.
+        </p>
+        <p>
+            <a href="#">腾讯公司 版权所有</a>
+        </p>
+    </div>
+</div>
+</body>
+<script>
+    $("#header").load("header.html");
+    var swiper = document.getElementsByClassName("swiper-wrapper");
+    console.log(swiper);
+    var temp;
+
+    console.log($(document).scrollTop());
+    console.log($(".head").height());
+    console.log($(window).innerHeight());
+
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop() <= $(".head").height() - $(window).innerHeight()) {
+            $(".side-nav").hide();
+        } else if ($(window).scrollTop() > $(".head").height() - $(window).innerHeight()) {
+            $(".side-nav").show();
+            if ($(window).scrollTop() > 1467 - $(window).innerHeight()) {
+                $(".cont1 .my-cont").addClass("active");
+                $(".navc li").removeClass("nav-on");
+                $(".snav1").addClass("nav-on")
+            }
+            if ($(window).scrollTop() > 2095 - $(window).innerHeight()) {
+                $(".cont2 .main2 .my-cont").addClass("active");
+                $(".navc li").removeClass("nav-on");
+                $(".snav2").addClass("nav-on")
+
+            }
+            if ($(window).scrollTop() > 2959 - $(window).innerHeight()) {
+                $(".cont3 .my-cont").addClass("active");
+                $(".navc li").removeClass("nav-on");
+                $(".snav3").addClass("nav-on")
+            }
+            if ($(window).scrollTop() > 3700 - $(window).innerHeight()) {
+                $(".cont4 .my-cont").addClass("active");
+                $(".navc li").removeClass("nav-on");
+                $(".snav4").addClass("nav-on")
+            }
+        }
+    });
+
+
+    var screenW, screenH;
+    var page = 0;
+    function resize() {
+        screenW = $(".swiper-slide").width();
+        screenH = $(".swiper-slide").outerHeight();
+        console.log(screenH, screenW);
+        $(".swiper-wrapper").css({"width": screenW, "height": screenH * $(".swiper-slide").size()});
+
+        $(".box-swiper").css({"width": "screenW", "height": screenH});
+
+        $(".swiper-slide").css({"width": screenW, "height": screenH})
+        $(".swiper-wrapper").css("top", -page * screenH)
+    }
+    resize();
+    window.onresize = resize;
+    var isRunning = false;
+    for (let i = 0; i < $(".bullet").size(); i++) {
+        $(".bullet").eq(i).click(function () {
+            page = i;
+            $(".swiper-wrapper").css({"top": -page * screenH - 20});
+            $(".bullet").removeClass("bullet-active");
+            $(this).addClass("bullet-active")
+        })
+
+    }
+
+   $(".swiper-wrapper").hover(function(){
+       addEventListener("mousewheel", mouseWheel);
+       addEventListener("DOMMouseScroll", mouseWheel);
+   },function(){
+       removeEventListener("mousewheel",mouseWheel);
+       removeEventListener("DOMMouseScroll", mouseWheel);
+   });
+    function scrollUp() {
+
+        if (!isRunning) {
+            isRunning = true;
+            setTimeout(function () {
+                isRunning = false;
+            }, 1000);
+            if (page > 0) {
+                page--;
+                $(".swiper-wrapper").css({"top": -page * screenH});
+                $(".bullet").removeClass("bullet-active");
+                $(".bullet").eq(page).addClass("bullet-active");
+            }
+        }
+    }
+
+    function scrollDown() {
+        if (!isRunning) {
+            isRunning = true;
+            setTimeout(function () {
+                isRunning = false;
+            }, 1000);
+            if (page < $(".swiper-slide").size() - 1) {
+                page++;
+                $(".swiper-wrapper").css({"top": -page * screenH});
+                $(".bullet").removeClass("bullet-active");
+                $(".bullet").eq(page).addClass("bullet-active");
+            }
+        }
+    }
+
+
+    function mouseWheel(ev) {
+        var oEvent = window.event || ev;
+
+        oEvent.preventDefault();
+        if (oEvent.detail) {
+            if (oEvent.detail > 0) {
+                scrollDown()
+            } else {
+                scrollUp()
+            }
+        } else if (oEvent.wheelDelta) {
+            if (oEvent.wheelDelta > 0) {
+                scrollUp()
+            } else {
+                scrollDown()
+            }
+        }
+    }
+
+    function addEvent(ele, type, listener) {
+        if (ele.addEventListener) {
+            ele.addEventListener(type, listener);
+        } else {
+            ele.attachEvent("on" + type, listener);
+        }
+    }
+
+
+</script>
+<script>
+    var map = new BMap.Map("container");
+    map.centerAndZoom(new BMap.Point(104.05, 30.65), 11);
+    var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});
+    var top_left_navigation = new BMap.NavigationControl();
+    var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL});
+
+    function add_control(){
+        map.addControl(top_left_control);
+        map.addControl(top_left_navigation);
+        map.addControl(top_right_navigation);
+    }
+    function delete_control(){
+        map.removeControl(top_left_control);
+        map.removeControl(top_left_navigation);
+        map.removeControl(top_right_navigation);
+    }
+</script>
+</html>

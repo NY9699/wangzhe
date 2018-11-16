@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爆料站-王者荣耀官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/xpf.css">
+    <link rel="icon" href="img3/icon.jpg">
+    <script src="jq/jquery.min.js"></script>
+</head>
+<body>
+<div class="warp">
+    <header>
+        <div class="header-top">
+            <a href="#" class="main-logo"></a>
+            <div class="header_nav">
+                <a href="#" title="首页" class="nav-index">首页
+                    <cite>HOME</cite>
+                </a>
+                <a href="#" title="新英雄" class="nav-hero">新英雄
+                    <cite>HERO</cite>
+                </a>
+                <a href="#" title="新皮肤" class="nav-skin">新皮肤
+                    <cite>SKIN</cite>
+                </a>
+                <a href="#" title="英雄重塑" class="nav-rebuild">英雄重塑
+                    <cite>REBUILD</cite>
+                </a>
+                <a href="#" title="英雄调整" class="nav-adjust">英雄调整
+                    <cite>ADJUSTMENT</cite>
+                </a>
+                <a href="#" title="新模式" class="nav-mode">新模式
+                    <cite>MODE</cite>
+                </a>
+                <a href="#" title="新系统" class="nav-newsys">新系统
+                    <cite>NEWSYS</cite>
+                </a>
+                <a href="#" title="系统优化" class="nav-system">系统优化<cite>SYSTEM</cite>
+                </a>
+                <a href="#" title="美术优化" class="nav-arts">美术优化
+                    <cite>ARTS</cite>
+                </a>
+            </div>
+            <div class="login_pannel">
+                <a class="avatar user_pic " href="#">
+                    <img src="img4/dl.png" width="42" height="42">
+                </a>
+                <div id="unlogin" class="per-infor unlogin_pannel" style="display: block;">
+                    <div class="unlogin_info">
+                        <a href="javascript:;">欢迎登录</a>
+                        <p>登录后查看游戏战绩</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="arts-head">
+        <div class="bannerBg"
+             style="background-image: url(img5/62b124cf52e425bb6e442e37479f7148.jpg);"></div>
+        <div class="arts-head-cont">
+            <div class="arts-head-title">科学大爆炸</div>
+            <div class="arts-head-desc">项羽化身时尚科学家</div>
+            <div class="arts-head-time">20181109</div>
+            <div class="arts-head-btn"><a href="#">
+                <div class="showHero"><span>查看详情 <i class="more-icon"></i></span></div>
+            </a></div>
+        </div>
+    </section>
+    <section class="hero-adjust hero-list">
+        <div class="wrap-list">
+            <div class="wrap-tit">
+                <h3>最新皮肤</h3>
+            </div>
+            <div class="wrap-content">
+                <div class="adjust-list">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div id="footer_ied">
+    <div class="wrap_ied">
+        <p>
+            <a href="#">腾讯互动娱乐</a>
+            | <a href="#">服务条款</a>
+            | <a href="#">广告服务</a>
+            | <a href="#">腾讯游戏招聘</a>
+            | <a href="#">腾讯游戏客服</a>
+            |<a href="#">游戏地图</a>
+            | <a href="#">成长守护平台</a>
+            | <a href="#">商务合作</a>
+            | <a href="#">网站导航</a></p>
+        <p class="e">COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+        <p><a href="#">腾讯公司 版权所有</a></p>
+    </div>
+</div>
+</body>
+<script>
+    $(function () {
+        $.ajax({
+            url: "https://www.easy-mock.com/mock/5bdaafb865346e4f101027e8/example/wangzhe",
+            type: "get",
+            data: "",
+            async: false,
+            dataType: "json"}).done(function(result){
+                    console.log(result);
+                    var data=result;
+                    var skinList=data.data.skin;
+                    console.log(skinList);
+                    for (var i = 0; i < skinList.length; i++) {
+                        $(".adjust-list ul").append(`
+                 <li><a href="#">
+                            <div class="adjust-img"><img
+                                    src="${skinList[i].img}"></div>
+                            <div class="adjust-cont"><p class="adjust-name">${skinList[i].p}</p>
+                                <p class="adjust-time">${skinList[i].date}</p></div>
+                        </a></li>
+                `)
+
+                    }
+                })
+
+    })
+</script>
+</html>

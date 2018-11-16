@@ -1,0 +1,383 @@
+.wrap {
+    width: 100%;
+    min-width: 1000px;
+    height: 4828px;
+    background: url(../img2/wrap-bg.jpg) no-repeat center top;
+    font-family: '\5FAE\8F6F\96C5\9ED1';
+    position: relative;
+    overflow: hidden;
+}
+.logo1 {
+    display: block;
+    width: 310px;
+    height: 120px;
+    background: url(../img2/logo1.png) no-repeat;
+    font-size: 0;
+    position: absolute;
+    left: 35px;
+    top: 20px;
+    z-index: 99;
+}
+.head {
+    height: 1050px;
+    position: relative;
+}
+.head, .content01, .content02, .content03 {
+    width: 1280px;
+    margin: 0 auto;
+}
+.h-video {
+    display: block;
+    width: 374px;
+    height: 126px;
+    background: url(../img2/h-video.png) no-repeat;
+    font-size: 0;
+    position: absolute;
+    top: 647px;
+    left: 452px;
+}
+.person {
+    width: 100%;
+    height: 870px;
+    background: url(../img2/person-bg.png) no-repeat center top;
+    margin-bottom: 80px;
+}
+.person-main {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.person-board {
+    width: 426px;
+    height: 790px;
+    background: url(../img2/person-board.jpg) no-repeat;
+    margin: 73px auto 0;
+    overflow: hidden;
+}
+.person-board .board-txt {
+    margin: 190px 45px 40px;
+    font-size: 24px;
+    color: #cab8a0;
+    line-height: 40px;
+}
+.person-board .btn-jl {
+    display: block;
+    width: 290px;
+    height: 170px;
+    background: url(../img2/board-video.png) no-repeat;
+    margin: 0 auto 70px;
+    font-size: 0;
+}
+.board-link {
+    width: 796px;
+    margin: 0 auto;
+    height: 92px;
+    position: absolute;
+    left: 243px;
+    bottom: 105px;
+    z-index: 2;
+}
+.board-link a.btn-cg {
+    float: left;
+    background-position: 0 0;
+}
+.board-link a {
+    width: 335px;
+    height: 92px;
+    font-size: 0;
+}
+.spr1 {
+    background: url(../img2/spr.png) no-repeat;
+}
+.board-link a.btn-detail {
+    float: right;
+    background-position: -353px 0;
+}
+/*content01开始*/
+.content01 {
+    height: 980px;
+}
+.title {
+    margin-bottom: 52px;
+}
+.titIn.t1 {
+    background-position: 0 0;
+}
+.titIn {
+    height: 115px;
+    font-size: 0;
+    margin-bottom: 15px;
+    background: url(../img2/title.png) no-repeat;
+}
+.title-tit {
+    font-size: 24px;
+    color: #cab8a0;
+    text-align: center;
+    line-height: 40px;
+}
+
+.ctbox {
+    height: 433px;
+    position: relative;
+    margin-bottom: 74px;
+}
+.ctbox-tab {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.ctbox-tab a.t1.curr, .ctbox-tab a.t1:hover {
+    background-position: 0 0;
+}
+
+.ctbox-tab a.t2 {
+    background-position: -267px -225px;
+}
+.ctbox-tab a:hover p, .ctbox-tab a.curr p {
+    color: #604825;
+}
+.ctbox-tab p {
+    margin: 150px 10px 0 20px;
+    font-size: 16px;
+    color: #cab8a0;
+    line-height: 20px;
+}
+.ctbox-tab a.t2, .ctbox-tab a.t4 {
+    bottom: 0;
+}
+
+.ctbox-tab a.t1, .ctbox-tab a.t2 {
+    left: 0;
+}
+.ctbox-tab a.t3 {
+    background-position: -534px -225px;
+}
+.ctbox-tab a.t1, .ctbox-tab a.t3 {
+    top: 0;
+}
+.ctbox-tab a.t3, .ctbox-tab a.t4 {
+    right: 0;
+}
+.ctbox-tab a.t4 {
+    background-position: -801px -225px;
+}
+.ctbox-tab a.t1, .ctbox-tab a.t3 {
+    top: 0;
+}
+
+.ctbox-tab a.t1, .ctbox-tab a.t2 {
+    left: 0;
+}
+.ctbox-slider {
+    width: 738px;
+    height: 433px;
+    position: absolute;
+    left: 271px;
+    top: 0;
+    z-index: 3;
+}
+.ctbox-slider .box {
+    width: 738px;
+    height: 433px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.ctbox-slider .list {
+    height: 433px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    font-size: 0;
+}
+.ctbox-slider .list li {
+    width: 738px;
+    height: 433px;
+    position: relative;
+}
+.ctbox-slider .list li, .ctbox-slider .bot span, .sbox-list a, .sbox-cont {
+    display: inline-block;
+    vertical-align: top;
+}
+.ctbox-slider .list img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.ctbox-slider .list-txt {
+    height: 70px;
+    padding: 0 70px 0 30px;
+    width: 638px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+}
+.ctbox-slider .list-txt span {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    line-height: 22px;
+    height: 44px;
+    margin-top: 13px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ctbox-tab a {
+    display: block;
+    width: 267px;
+    height: 215px;
+    overflow: hidden;
+    position: absolute;
+    background: url(../img2/ctab-spr-h1.png) no-repeat;
+}
+
+.ctbox-tab a.t2:hover {
+    background-position: -267px 0;
+}
+.ctbox-tab a.t3:hover {
+    background-position: -534px 0;
+}
+.ctbox-tab a.t4.curr, .ctbox-tab a.t4:hover {
+    background-position: -801px 0;
+}
+.ctbox-slider .prev{
+    background:url("../img2/spr.png")  -725px 0 no-repeat;
+}
+.ctbox-slider .arr {
+    width: 46px;
+    height: 76px;
+    display: block;
+    font-size: 0;
+    position: absolute;
+    top: 178px;
+    z-index: 33;
+    animation: hl 3s infinite;
+}
+@keyframes hl {
+    25%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.2);
+
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.ctbox-slider .next {
+    background:url("../img2/spr.png")  -779px 0 no-repeat;
+    right: 0;
+}
+.btn-introduce {
+    display: block;
+    width: 738px;
+    height: 92px;
+    margin: 0 auto;
+    font-size: 0;
+    background: url(../img2/spr.png) no-repeat 0 -100px;
+    opacity: 0.95;
+}
+
+.titIn.t3 {
+    background-position: 0 -230px;
+}
+
+.sbox {
+    height: 446px;
+    background: #332620;
+    margin-bottom: 120px;
+}
+.sbox-list {
+    height: 446px;
+}
+.sbox-list li {
+    float: left;
+    height: 446px;
+    width: 114px;
+    margin-right: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+}
+.sbox-list li.curr {
+    width: 934px;
+    margin-right: 0;
+    transition: all 0.2s;
+}
+.sbox-list li:nth-child(1).curr a {
+    background-position: 0px -458px;
+}
+
+.sbox-list li:nth-child(1) a {
+    background-position: 0 0;
+}
+.sbox-list a {
+    width: 114px;
+    height: 446px;
+    font-size: 0;
+    background: url(../img2/stab-spr.png) no-repeat;
+}
+.sbox-cont {
+    width: 820px;
+    height: 426px;
+    padding-top: 20px;
+    background: #332620;
+    overflow: hidden;
+}
+.sbox-pic {
+    width: 620px;
+    margin: 0 auto 20px;
+}
+.sbox-pic img {
+    display: block;
+    max-width: 100%;
+    max-height: 278px;
+    margin: 0 auto;
+}
+.sbox-txt {
+    white-space: normal;
+    width: 620px;
+    font-size: 18px;
+    color: #cab8a0;
+    line-height: 24px;
+    margin: 0 auto;
+}
+
+.btn-enter {
+    display: block;
+    width: 1280px;
+    height: 81px;
+    background:url(../img2/spr.png) no-repeat 0 -206px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #997a4d;
+    text-align: center;
+    line-height: 81px;
+    opacity: 0.95;
+}
+
+
+#afooter {
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    line-height: 20px;
+    background-position: top;
+    color: #4c3f37;
+    background-color: #1f1814;
+    padding: 30px 0;
+}
+#afooter a {
+    color: #4c3f37;
+}

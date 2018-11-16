@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爆料站-王者荣耀官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/xyx.css">
+    <link rel="icon" href="img3/icon.jpg">
+    <script src="jq/jquery.min.js"></script>
+</head>
+<body>
+<div class="warp">
+    <header>
+        <div class="header-top">
+            <a href="index.html" class="main-logo"></a>
+            <div class="header_nav">
+                <a href="index.html" title="首页" class="nav-index">首页
+                    <cite>HOME</cite>
+                </a>
+                <a href="xyx.html" title="新英雄" class="nav-hero">新英雄
+                    <cite>HERO</cite>
+                </a>
+                <a href="xpf.html" title="新皮肤" class="nav-skin">新皮肤
+                    <cite>SKIN</cite>
+                </a>
+                <a href="#" title="英雄重塑" class="nav-rebuild">英雄重塑
+                    <cite>REBUILD</cite>
+                </a>
+                <a href="#" title="英雄调整" class="nav-adjust">英雄调整
+                    <cite>ADJUSTMENT</cite>
+                </a>
+                <a href="#" title="新模式" class="nav-mode">新模式
+                    <cite>MODE</cite>
+                </a>
+                <a href="#" title="新系统" class="nav-newsys">新系统
+                    <cite>NEWSYS</cite>
+                </a>
+                <a href="#" title="系统优化" class="nav-system">系统优化<cite>SYSTEM</cite>
+                </a>
+                <a href="#" title="美术优化" class="nav-arts">美术优化
+                    <cite>ARTS</cite>
+                </a>
+            </div>
+            <div class="login_pannel">
+                <a class="avatar user_pic " href="#">
+                    <img src="img4/dl.png" width="42" height="42">
+                </a>
+                <div id="unlogin" class="per-infor unlogin_pannel" style="display: block;">
+                    <div class="unlogin_info">
+                        <a href="javascript:;">欢迎登录</a>
+                        <p>登录后查看游戏战绩</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="arts-head">
+        <div class="bannerBg"
+             style="background-image: url(img5/eb76d496034d3db7c2d37e9fe0e6fa25.jpg);"></div>
+        <div class="arts-head-cont">
+            <div class="arts-head-title">上官婉儿</div>
+            <div class="arts-head-desc"></div>
+            <div class="arts-head-time">即将上线</div>
+            <div class="arts-head-btn"><a href="//pvp.qq.com/coming/v2/heros/1112shanggwane.shtml?ADTAG=pvp.hero.pcgw"
+                                          target="_blank">
+                <div class="showHero"><span>查看详情 <i class="more-icon"></i></span></div>
+            </a></div>
+        </div>
+    </section>
+    <section class="hero-adjust hero-list">
+        <div class="wrap-list">
+            <div class="wrap-tit">
+                <h3>最新英雄</h3>
+            </div>
+            <div class="wrap-content">
+                <div class="adjust-list">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div id="footer_ied">
+    <div class="wrap_ied">
+        <p>
+            <a href="#">腾讯互动娱乐</a>
+            | <a href="#">服务条款</a>
+            | <a href="#">广告服务</a>
+            | <a href="#">腾讯游戏招聘</a>
+            | <a href="#">腾讯游戏客服</a>
+            |<a href="#">游戏地图</a>
+            | <a href="#">成长守护平台</a>
+            | <a href="#">商务合作</a>
+            | <a href="#">网站导航</a></p>
+        <p class="e">COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+        <p><a href="#">腾讯公司 版权所有</a></p>
+    </div>
+</div>
+</body>
+<script>
+    $(function(){
+        $.ajax({
+            url:"https://www.easy-mock.com/mock/5bdaafb865346e4f101027e8/example/wangzhe",
+            type:"get",
+            data:{},
+            async:false,
+            dataType:"json"}).done(function(result){
+            console.log(result);
+            var data=result;
+            var dataList=data.data.hero;
+            console.log(dataList);
+            for (var i = 0; i < dataList.length; i++) {
+                $(".adjust-list ul").append(`
+                 <li><a href="#">
+                            <div class="adjust-img"><img
+                                    src="${dataList[i].img}"></div>
+                            <div class="adjust-cont"><p class="adjust-name">${dataList[i].p}</p>
+                                <p class="adjust-time">${dataList[i].date}</p></div>
+                        </a></li>
+                `)
+
+            }
+        })
+    })
+</script>
+</html>
